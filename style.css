@@ -1,0 +1,92 @@
+html {
+    font-size: 16px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 2rem;
+    padding-left: min(50px, 5%);
+    padding-right: min(50px, 5%);
+}
+
+header {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+body {
+    margin: 0;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: inline-flex;    
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: auto;
+}
+
+header li {
+    margin: 0 .8rem;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: .8rem 1rem;
+    border-radius: .6rem;
+    width: 9rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;    
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction img {
+    width: 20rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#projects h2 {
+    border-bottom: 1px solid black;
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+}
+
+#project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#project {
+    width: 35%;
+    margin: 0 1rem;
+}
