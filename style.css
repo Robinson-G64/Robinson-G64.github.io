@@ -1,265 +1,159 @@
-html {
-    font-size: 16px;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;    
-    padding-left: min(50px, 5%);
-    padding-right: min(50px, 5%);
-    font-family: 'Roboto', sans-serif;
-}
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 16px;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;    
+        padding-left: min(50px, 5%);
+        padding-right: min(50px, 5%);
+        font-family: 'Roboto', sans-serif;
+    }
 
-header {
-    display: inline-flex;
-    width: 100%;
-    background-color: white;
-}
-
-body {
-    margin: 0;
-}
-
-header img {
-    width: 200px;
-    height: auto;
-    margin-top: 2rem;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-    display: inline-flex;    
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-top: 2rem;
-    margin-bottom: auto;
-}
-
-li {
-    margin: 0 .8rem;
-}
-
-button {
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    padding: .8rem 1rem;
-    border-radius: .6rem;
-    width: 9rem;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-#introduction {
-    display: flex;
-    flex-direction: row;
-    max-width: 1000px;    
-    margin: 6rem auto 8rem auto;
-    justify-content: center;
-    align-items: center;
-}
-
-#intro-pic-container  {
-    width: 20rem;
-    min-width: 20rem;
-    height: 100%;
-    overflow: hidden;
-    margin-right: 2rem;
-}
-
-#introduction img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-h1 {
-    font-size: 3rem;
-    font-family: 'Source Code Pro', monospace;
-}
-
-h2 {
-    border-bottom: 1px solid black;
-    padding-left: 1rem;
-    font-size: 2rem;
-    margin: 1rem 0 3rem 0;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1.2rem;
-}
-
-#projects {
-
-}
-
-#project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#project {
-    margin: 2rem;    
-    width: 30%;
-}
-
-#project h3 {
-    border-bottom: 1px solid black;
-}
-
-#img-container  {
-    width: 100%;
-    height: 240px;
-    overflow: hidden;
-}
-
-#img-container img   {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#about {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#about-me {
-    display: flexbox;    
+    body {
+        margin: 0;
+    }
     
-}
-
-#about-me-1 {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-#about-image-1 {
-    width: auto;
-    height: 300px;
-    overflow: hidden;
-    margin: auto 3rem;
-}
-
-#about-image-1 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#about-me-2 {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-    flex-direction: row-reverse;
-}
-
-#about-image-2 img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#about-image-2 {
-    width: auto;
-    height: 300px;
-    overflow: hidden;
-    margin: auto 3rem;
-}
-
-#about-me-text {
-    width: 40%;
-    margin: auto 2rem;
-}
-
-#cv-img-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-}
-
-#cv-img-container img {
-    border: 1px solid black;
-}
-
-#cv-img-container img:hover {
-    box-shadow: 2px 2px 2px 2px gray;
-}
-
-#cv-img-container p {
-    visibility: hidden;
-}
-
-#footer-div {
-    margin-top: 4rem;
+    header {
     display: inline-flex;
     width: 100%;
-    align-items: center;
-}
+    background-color: white;
+    justify-content: center;
+    }
 
-#footer-buttons {
-    margin-left: auto;
-}
+    header img {
+        width: 200px;
+        height: auto;
+        margin-top: 2rem;
+    }
 
-#footer-buttons ul {
-    margin: 0;
-}
-
-@media only screen and (max-width: 900px) {
     header ul {
         display: none;
     }
 
-    header {
-        justify-content: center;
+    ul {
+        padding: 0;
+        list-style: none;
+        display: inline-flex;    
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-top: 2rem;
+        margin-bottom: auto;
     }
 
+    li {
+        margin: 0 .8rem;
+    }
+
+    button {
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        padding: .8rem 1rem;
+        border-radius: .6rem;
+        width: 9rem;
+        font-size: 1rem;
+    }
+    
+    button:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    
     #introduction {
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;    
+        margin: 6rem auto 8rem auto;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
-
+    
     #intro-pic-container  {
+        width: 20rem;
+        min-width: 20rem;
+        height: 100%;
+        overflow: hidden;
         margin-right: 0rem;
     }
-
+    
+    #introduction img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        font-family: 'Source Code Pro', monospace;
+    }
+    
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 1rem;
+        font-size: 2rem;
+        margin: 1rem 0 3rem 0;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+    
+    #projects {
+    
+    }
+    
+    #project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
     #project {
         margin: .5rem;    
         width: 90%;
         margin-bottom: 2rem;
     }
-
-    #img-container  {
-        height: 400px;
+    
+    #project h3 {
+        border-bottom: 1px solid black;
     }
-
+    
+    #img-container  {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    
+    #img-container img   {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #about {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #about-me {
+        display: flexbox;    
+        
+    }
+    
     #about-me-1 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: 2rem 0;
     }
-
-    #about-me-2 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #about-me-text {
-        margin: auto;
-        width: 70%;
-    }
-
-    #about-image-1  {
+    
+    #about-image-1 {
         width: 20rem;
         min-width: 22rem;
         height: 100%;
@@ -267,18 +161,132 @@ p {
         margin: auto;
     }
     
-    #about-image-1 img {
+    #about-image-1 img{
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-
-    #about-image-2  {
+    
+    #about-me-2 {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        flex-direction: column;
+    }
+    
+    #about-image-2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #about-image-2 {
         width: 20rem;
         min-width: 22rem;
         height: 100%;
         overflow: hidden;
         margin: auto;
+    }
+    
+    #about-me-text {
+        margin: auto;
+        width: 70%;
+    }
+    
+    #cv-img-container {
+        width: 20rem;
+        min-width: 22rem;
+        height: 100%;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    
+    #cv-img-container img {
+        border: 1px solid black;
+        height: 96%;
+        width: 96%;
+        object-fit: cover;
+    }
+    
+    #cv-img-container img:hover {
+        box-shadow: none;
+    }
+    
+    #cv-img-container p {
+        visibility: visible;
+        margin: 0 auto .6rem auto;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    #footer-div {
+        margin-top: 4rem;
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+    }
+    
+    #footer-buttons {
+        margin-left: auto;
+    }
+    
+    #footer-buttons ul {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header ul  {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    #introduction {
+        flex-direction: row;
+    }
+
+    #intro-pic-container  {
+        margin-right: 2rem;
+    }
+
+    #project {
+        margin: 2rem;    
+        width: 30%;
+    }
+
+    #img-container  {
+        height: 240px;
+    }
+
+    #about-me-1 {
+        flex-direction: row;
+    }
+
+    #about-me-2 {
+        flex-direction: row-reverse;
+    }
+
+    #about-me-text {
+        margin: auto 2rem;
+        width: 40%;
+    }
+
+    #about-image-1  {
+        width: auto;
+        height: 300px;
+        overflow: hidden;
+        margin: auto 3rem;
+    }
+
+    #about-image-2  {
+        width: auto;
+        height: 300px;
+        overflow: hidden;
+        margin: auto 3rem;
     }
     
     #about-image-2 img {
@@ -288,30 +296,32 @@ p {
     }
 
     #cv-img-container {
-        width: 20rem;
-        min-width: 22rem;
-        height: 100%;
-        overflow: hidden;
+        width: 100%;
+        min-width: none;
+        height: none;
+        overflow: none;
         margin: auto;
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem 0;
     }
 
     #cv-img-container img {
         border: 1px solid black;
-        height: 96%;
-        width: 96%;
-        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-fit: none;
     }
 
     #cv-img-container img:hover {
-        box-shadow: none;
+        box-shadow: 2px 2px 2px 2px gray;
     }
 
     #cv-img-container p {
-        visibility: visible;
-        margin: 0 auto .6rem auto;
-        font-size: 1.2rem;
-        text-align: center;
+        display: none;
+        margin: none;
+        font-size: none;
+        text-align: none;
     }
+
   }
