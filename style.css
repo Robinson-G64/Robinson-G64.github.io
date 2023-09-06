@@ -99,6 +99,10 @@ p {
     font-size: 1.2rem;
 }
 
+#projects {
+
+}
+
 #project-container {
     display: flex;
     flex-wrap: wrap;
@@ -194,6 +198,10 @@ p {
     box-shadow: 2px 2px 2px 2px gray;
 }
 
+#cv-img-container p {
+    visibility: hidden;
+}
+
 #footer-div {
     margin-top: 4rem;
     display: inline-flex;
@@ -209,7 +217,7 @@ p {
     margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     header ul {
         display: none;
     }
@@ -301,7 +309,9 @@ p {
     }
 
     #cv-img-container p {
+        visibility: visible;
         margin: 0 auto .6rem auto;
         font-size: 1.2rem;
+        text-align: center;
     }
   }
