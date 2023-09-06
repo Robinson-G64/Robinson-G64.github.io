@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    max-width: 1280x;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;    
     padding-left: min(50px, 5%);
@@ -66,18 +66,22 @@ button:hover {
 #introduction img {
     width: 20rem;
     height: auto;
-    margin-right: 1rem;
+    margin-right: 4rem;
 }
 
 h1 {
     font-size: 3rem;
 }
 
-#projects h2 {
+h2 {
     border-bottom: 1px solid black;
     padding-left: 1rem;
     font-size: 2rem;
     margin: 1rem 0 4rem 0;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 #project-container {
@@ -87,12 +91,8 @@ h1 {
 }
 
 #project {
-    width: 35%;
-    margin: 0 1rem;
-}
-
-#project {
-    margin: 2rem;
+    margin: 2rem;    
+    width: 30%;
 }
 
 #project h3 {
@@ -109,4 +109,38 @@ h1 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+#about {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-me {
+    display: flexbox;    
+    
+}
+
+#about-me-1 {
+    display:inline-flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+#about-image-1 {
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+    margin: auto 2rem;
+}
+
+#about-image-1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#about-me-text {
+    width: 40%;
+    margin: auto 2rem;
 }
