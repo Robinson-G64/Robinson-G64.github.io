@@ -2,8 +2,7 @@
     html {
         font-size: 16px;
         max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;    
+        margin: 0 auto;  
         padding-left: min(50px, 5%);
         padding-right: min(50px, 5%);
         font-family: 'Roboto', sans-serif;
@@ -19,15 +18,25 @@
     z-index: 1001;
     top: 0;
     max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding-left: min(50px, 5%);
+    padding-right: min(50px, 5%);
+    width: 100%;
     }
 
     header img {
         width: 200px;
         height: auto;
-        margin: 1rem;
+        margin: 1rem auto 0 auto;
+        display: block;
+    }
+
+    ul  {
+        list-style: none;
+        display: grid;
+        grid-gap: 1rem;
     }
 
     header ul {
@@ -231,8 +240,12 @@
 
     }
     
+    footer {
+        margin: 2rem auto;
+    }
+
     #footer-div {
-        margin-top: 4rem;
+        margin: 4rem auto 1rem auto;
         display: inline-flex;
         width: 100%;
         align-items: center;
@@ -249,22 +262,19 @@
 
 @media only screen and (min-width: 1025px) {
     header {
-        max-width: 1280px;
         display: grid;
         grid-template-columns: auto auto;
-        justify-content: space-between;
 
     }
-    
+
     header ul  {
         padding: 0;
         list-style: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: auto 0 auto auto;
+        margin: auto 2rem auto auto;
     }
 
-    }
     #introduction {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: none;
@@ -344,3 +354,4 @@
         text-align: none;
     }
 
+}
