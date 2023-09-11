@@ -284,10 +284,6 @@
         grid-template: repeat(2,2fr)/repeat(2,2fr);
     }
 
-    #project {
-        
-    }
-
     #img-container  {
         height: 300px;
     }
