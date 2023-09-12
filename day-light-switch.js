@@ -18,23 +18,22 @@ document.addEventListener('DOMContentLoaded', function () {
             let buttonElements = document.querySelectorAll("button");
             buttonElements.forEach(function (button) {
                 button.style.borderColor= 'white';
-                button.style.backgroundColor= 'white'
-                button.style.color= 'black';
+                button.style.backgroundColor= 'black'
+                button.style.color= 'white';
                 
                 button.addEventListener('mouseover', () => {
-                    button.style.backgroundColor = 'black';
-                    button.style.color = 'white'
+                    button.style.backgroundColor = 'white';
+                    button.style.color = 'black'
                 });
                 button.addEventListener('mouseout', () => {
                     // Change the button's background color back to its original color
-                    button.style.backgroundColor = 'white';
-                    button.style.color = 'black';
+                    button.style.backgroundColor = 'black';
+                    button.style.color = 'white';
                 });
             });
 
         });
     }
-
     function applyLightModeStyles() {
         requestAnimationFrame(() => {
             document.body.classList.remove("dark-mode");
@@ -57,21 +56,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 button.style.backgroundColor= ''
                 button.style.color= '';
             });
+            buttonElements.forEach(function (button) {
+                button.addEventListener('mouseover', () => {
+                    button.style.backgroundColor = 'black';
+                    button.style.color = 'white'
+                });
+                button.addEventListener('mouseout', () => {
+                    button.style.backgroundColor = 'white';
+                    button.style.color = 'black';
+                });
+            });
         });
+        
     }
 
     // Add hover styles for buttons
-    let buttonElements = document.querySelectorAll("button");
-    buttonElements.forEach(function (button) {
-        button.addEventListener('mouseover', () => {
-            button.style.backgroundColor = 'white';
-            button.style.color = 'black'
-        });
-        button.addEventListener('mouseout', () => {
-            button.style.backgroundColor = 'black';
-            button.style.color = 'white';
-        });
-    });
+    
 
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
