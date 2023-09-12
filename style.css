@@ -263,7 +263,7 @@
     #footer-buttons ul {
         margin: 0;
     }
-    
+
     .dropdown {
         position: relative;
         display: inline-block;
@@ -278,6 +278,7 @@
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
+        border-radius: 0;
     }
     
     /* Style for the dropdown content (hidden by default) */
@@ -291,15 +292,21 @@
     }
     
     /* Style for the dropdown links */
-    .dropdown-content a {
+    .dropdown-content button {
         color: #000; /* Black text */
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        border: auto;        
+        background-color: auto;
+        color: auto;
+        border-radius: 0;
+        width: 100%;
+        font-size: auto;
     }
     
     /* Change color on hover */
-    .dropdown-content a:hover {
+    .dropdown-content button:hover {
         background-color: #000; /* Black background */
         color: #fff; /* White text */
     }
@@ -308,9 +315,6 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
-
-
-
 
 }
 
