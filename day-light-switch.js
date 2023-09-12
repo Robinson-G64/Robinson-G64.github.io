@@ -1,5 +1,16 @@
-let first = document.body.children[0];
-first.innerHTML = 'BROWN BEARS ARE AWESOME!';
+let logoImg = document.header.children[0];
+logoImg.src = './resources/gr-log-w.png';
 
-first.parentNode.style.backgroundColor = 'black';
-first.parentNode.style.color = 'white';
+function darken () {
+    document.getElementById("logo").src="./resources/gr-log-w.png";
+    document.parentNode.style.backgroundColor = 'black';
+    document.parentNode.style.color = 'white';
+}
+
+function lighten () {
+    document.getElementById("logo").src="./resources/gr-logo.png";
+    document.style.backgroundColor = 'black';
+    document.style.color = 'white';
+}
+
+
