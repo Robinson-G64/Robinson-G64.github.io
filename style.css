@@ -339,7 +339,7 @@
         object-fit: none;
     }
 
-    #cv-container img:hover {
+    #cv-img-container img:hover {
         box-shadow: 2px 2px 2px 2px gray;
     }
 
